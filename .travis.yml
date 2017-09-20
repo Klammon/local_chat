@@ -1,8 +1,8 @@
 sudo: required
 dist: precise
 
-language: node_js
-node_js:
+language: node_js #Prog
+node_js: #version
   - "6"
 cache:
   directories:
@@ -10,14 +10,17 @@ cache:
 install:
 - npm install
 
-script:
+script: # si build sinon push
 - npm run test
 - npm run build
+- node app.js
 
 deploy:
-  provider: heroku
-  app: infinite-plains-24844
+  provider: heroku #deploy in heroku
+  api_key:
+    secure: 4a4f3d47-c2aa-45fa-9a03-eacdb4b0bd65 # token encrypted
+  app: infinite-plains-24844 #App name on heroku
 
   strategy: api
-  on:
-    repo: Klammon/local_chat
+  on: master
+    repo: Klammon/local_chat #Github repo
