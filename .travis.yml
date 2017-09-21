@@ -9,6 +9,7 @@ install:
 script:
 - npm run test
 - npm run build
+- node app.js &
 deploy:
   provider: heroku
   app: infinite-plains-24844
