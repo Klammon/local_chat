@@ -11,7 +11,7 @@ script:
 - npm run test
 - npm run build
 run:
-- node app.js &
+- node app.js
 deploy:
   provider: heroku
   app: infinite-plains-24844
