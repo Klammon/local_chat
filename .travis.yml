@@ -6,20 +6,20 @@ cache:
   directories:
   - node_modules
 install:
-- npm install
+- npm install -g- npm
 #- bower install
 script:
 - npm run test
 #- npm run build
 #run:
 #- node app.js
-deploy:
-  provider: heroku
-  app: infinite-plains-24844
-  api_key:
-    secure: nYD6XSnvVyWe8HeYu+XtdblFqjx3FKN4CrNU+3yH/EVOwT+alY74wkxlSitnsoF7XwWvRfbLlfpC82q8tMguUj+mM7TEMXgDtGqzZdGju/RJ8+GmDcjC/S9dpovzArwtpx+iuKveEmc7uUtbuGdbWjCbs8k03f6T4ETpy8Nvn4B08MpJqiUXeQiN+z4cqtDy03UE1vqKlwfz9z35exkogUmAIMUGatQRKhJTD2ufMWc+JgoHLijoUjPZhbSWCwrZ+RTwGU8YfwwQFmInq0qz/RiY24+xnu0VuZYTLblvM/K8IYg0908HdbfXf0Pu2nJbgVyZuBaSY4/2zJNKxaSE5NvInNnSXJbqGFkOB27yWY9rEfH9s7ZyP+loA9Ab7DJDuxTla1gTe+cPbqXaPNkxvErxb2OB2wczuWnNaTjtS1RNeKfpncGP+kB2k9G5LxHYaS732u3NmbiLFQ7cwWvuiHxPKtvzqbYlwQcSxTRAN5rHJvGt1+dZ4LXro8xanhU8h6XSy58yBtB7gooKctx3X81Oo+c5YRgx29RUEdkhdG0yEhylPfAZJTAb7WBacRVkcIbYk5QDpOviYvjxkVY6kUecpXV2vN40RUFRZcTeF0fRQNuBxx9zo7BsS44iNgHTe3awCJu8rGNeyv30yW2B6R22B4GD3VBZBeFe8CRc4So=
+#deploy:
+#  provider: heroku
+#  app: infinite-plains-24844
+#  api_key:
+#    secure: nYD6XSnvVyWe8HeYu+XtdblFqjx3FKN4CrNU+3yH/EVOwT+alY74wkxlSitnsoF7XwWvRfbLlfpC82q8tMguUj+mM7TEMXgDtGqzZdGju/RJ8+GmDcjC/S9dpovzArwtpx+iuKveEmc7uUtbuGdbWjCbs8k03f6T4ETpy8Nvn4B08MpJqiUXeQiN+z4cqtDy03UE1vqKlwfz9z35exkogUmAIMUGatQRKhJTD2ufMWc+JgoHLijoUjPZhbSWCwrZ+RTwGU8YfwwQFmInq0qz/RiY24+xnu0VuZYTLblvM/K8IYg0908HdbfXf0Pu2nJbgVyZuBaSY4/2zJNKxaSE5NvInNnSXJbqGFkOB27yWY9rEfH9s7ZyP+loA9Ab7DJDuxTla1gTe+cPbqXaPNkxvErxb2OB2wczuWnNaTjtS1RNeKfpncGP+kB2k9G5LxHYaS732u3NmbiLFQ7cwWvuiHxPKtvzqbYlwQcSxTRAN5rHJvGt1+dZ4LXro8xanhU8h6XSy58yBtB7gooKctx3X81Oo+c5YRgx29RUEdkhdG0yEhylPfAZJTAb7WBacRVkcIbYk5QDpOviYvjxkVY6kUecpXV2vN40RUFRZcTeF0fRQNuBxx9zo7BsS44iNgHTe3awCJu8rGNeyv30yW2B6R22B4GD3VBZBeFe8CRc4So=
 
   #strategy: api
-  strategy: git
-  on: master
-  repo: Klammon/local_chat
+#  strategy: git
+#  on: master
+#  repo: Klammon/local_chat
