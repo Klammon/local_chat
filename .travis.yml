@@ -6,10 +6,10 @@ cache:
   directories:
   - node_modules
 install:
-- npm install -g- npm
+- npm install
 #- bower install
 script:
-- npm run test
+- npm run start
 #- npm run build
 #run:
 #- node app.js
