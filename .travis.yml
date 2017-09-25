@@ -10,7 +10,7 @@ install:
 #- bower install
 script:
 - npm run test
-- npm run build
+#- npm run build
 #run:
 #- node app.js
 deploy:
