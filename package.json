@@ -20,7 +20,7 @@
   },
   "scripts": {
     "test": "mocha -R spec test/*-app.js",
-    "start" :"node app.js &" ,
+    "start" :"node app.js &"
   },
   "repository": {
     "type": "git",
