@@ -9,18 +9,19 @@
     "express": "^3.21.2",
     "fs": "0.0.1-security",
     "http": "0.0.0",
+    "request": "^2.83.0",
     "socket.io": "^1.7.4"
   },
   "author": "klammon",
   "description": "Un super Chat temps réel avec socket.io",
   "main": "app.js",
   "devDependencies": {
-    "chai": "*",
+    "chai": "^4.1.2",
     "mocha": "^3.1.2"
   },
   "scripts": {
     "test": "mocha -R spec test/*app.js",
-    "start" :"node app.js &"
+    "start": "node app.js &"
   },
   "repository": {
     "type": "git",

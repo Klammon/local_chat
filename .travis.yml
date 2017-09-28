@@ -1,26 +1,16 @@
 language: node_js
 node_js:
-#- 8.2.1
 - stable
 cache:
   directories:
   - node_modules
 install:
-- npm install #install
-#- bower install
+- npm install
 script:
-#- make test
 - npm test
 - npm run start
-#- npm run build
-#run:
-#- node app.js
-
-#deploy:
-#  provider: heroku
-#  api_key: # travis encrypt $(heroku auth:token) --add deploy.api_key // travis encrypt "GITHUB TOKEN" --add deploy.api_key    Get the encrypt key in heroku bash
-#    secure: nYD6XSnvVyWe8HeYu+XtdblFqjx3FKN4CrNU+3yH/EVOwT+alY74wkxlSitnsoF7XwWvRfbLlfpC82q8tMguUj+mM7TEMXgDtGqzZdGju/RJ8+GmDcjC/S9dpovzArwtpx+iuKveEmc7uUtbuGdbWjCbs8k03f6T4ETpy8Nvn4B08MpJqiUXeQiN+z4cqtDy03UE1vqKlwfz9z35exkogUmAIMUGatQRKhJTD2ufMWc+JgoHLijoUjPZhbSWCwrZ+RTwGU8YfwwQFmInq0qz/RiY24+xnu0VuZYTLblvM/K8IYg0908HdbfXf0Pu2nJbgVyZuBaSY4/2zJNKxaSE5NvInNnSXJbqGFkOB27yWY9rEfH9s7ZyP+loA9Ab7DJDuxTla1gTe+cPbqXaPNkxvErxb2OB2wczuWnNaTjtS1RNeKfpncGP+kB2k9G5LxHYaS732u3NmbiLFQ7cwWvuiHxPKtvzqbYlwQcSxTRAN5rHJvGt1+dZ4LXro8xanhU8h6XSy58yBtB7gooKctx3X81Oo+c5YRgx29RUEdkhdG0yEhylPfAZJTAb7WBacRVkcIbYk5QDpOviYvjxkVY6kUecpXV2vN40RUFRZcTeF0fRQNuBxx9zo7BsS44iNgHTe3awCJu8rGNeyv30yW2B6R22B4GD3VBZBeFe8CRc4So=
-#    app: gzorchat/infinite-plains-24844
-#  strategy: api
-#  on: master
-#    repo: Klammon/local_chat
+deploy:
+  provider: heroku
+  app: infinite-plains-24844
+  api_key:
+    secure: XFHMV4VpsziFUO7lvpT4wWTke6Ex515+G1LVbq6pqIHsoN2+9tTn5mlYQwFZzjvLqFMGjHO9byfR8cePKbxz7rQZnVWf8EYdBeVmYj9pzBuH8f1dEH0k2F2Zz7lH2wnm+FAzNsDbk1PInw0tmbkucB0cVAbR2hpbgcWEsBoeHdzSbPk7aalLMasTCrfaApeCmUe79W6Pzgu8VYM+XcPDnhnKU7b3B17KaomcYyRvzEPTjH0sljdl1CD4geC7FMZkg/lVk5uvx7SL8SVEkEDCBJWWMJNfLjNI2kBuYH2iejrqoQIWVzZDIHeBh9lto/nSKsK39hDQ9SSbGRqGxD4Yr5gQrhx2XISGSjcZfMwFTs4V0RS8D9z9iaerMdQ+A7Qah8hol6fiE6PrbYbQnrbwuhZOd7331zlgpJWTbtO6HpDBkQsMSD899Ux12dmu2JE4pH2PKmu/an1ycE/0J/5d9uJY1mauNhTz97u17m/pd006oYoTpMMie9IzhqSKUuCAp+p7xHkRAgT8PB/i4l3I2g5vY93FW/1oqbIp+ekItjFvl/fmTrV0V65o0W1ZmfoL84QLypjnxh0KvIZdDIYJFczFQ1pxVroPSt4o894RY7j0nXpYi3lT8ENWwZmMy+MFeOgOwO8l5RGZyfZl0kYUlzp/vP8jtBqL4Dcv7L3sb1o=
